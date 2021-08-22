@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Victor's Projects</title>
+    <script src="common/_head biolerplate.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <!-- https://materializecss.com/navbar.html -->
+    <nav class="purple darken-3 navbar-fixed">
+      <div class="nav-wrapper">
+        <!-- Mobile Collapse Button -->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons">menu</i></a
+        >
+
+        <ul class="left hide-on-med-and-down navbar">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="about.html">About Me</a></li>
+          <li><a href="work.html">My Work</a></li>
+          <li><a href="school.html">My Projects</a></li>
+          <li><a href="contact.html">Conact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Side-Nav -->
+    <!-- mobile collapse button target -->
+    <ul class="sidenav navbar" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="about.html">About Me</a></li>
+      <li><a href="work.html">My Work</a></li>
+      <li><a href="school.html">My Projects</a></li>
+      <li><a href="contact.html">Conact Me</a></li>
+    </ul>
+    <!-- End Side-Nav -->
+
+    <header>
+      <h2>Victor's Projects</h2>
+    </header>
+    <main class="container">
+      <!-- Space Hunt -->
+      <div class="row section">
+        <div class="col s10 m7 l12 offset-s1 offset-m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/SpaceHunt.png" alt="Space Hunt" />
+            </div>
+            <div class="card-content blue">
+              <span class="activator text-darken-4 white-text flow-text">
+                Space Hunt - CS300 Project
+                <i class="material-icons right"></i>
+              </span>
+              <br />
+              <span class="white-text flow-text">
+                In CS300 with Warren Harrison we developed Space Hunt, and
+                intergalactic hunt for the KokaKola Recipe! Be ware Bad Max is
+                after you at all times! This project was done in conjunction
+                with 5 other team members, we used Javascript, with some HTML
+                and CSS.
+              </span>
+            </div>
+            <div class="card-action flow-text">
+              Try your luck at finding the KokaKola Recipe!
+              <a href="http://web.cecs.pdx.edu/~victor32/SpaceHunt2/">
+                Play now.
+              </a>
+              <a href="https://github.com/VictorPDX/Team2"> GitHub </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Space Hunt -->
+
+      <!-- Food Facts -->
+      <div class="row">
+        <div class="col s12 m7 l12 offset-m3">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="images/Bananas.jpg"
+                alt="Bananas are berries and strawberries are not image."
+              />
+              <a
+                class="
+                  activator
+                  btn-floating
+                  halfway-fab
+                  waves-effect waves-light
+                  red
+                "
+              >
+                <i class="material-icons">add</i>
+              </a>
+            </div>
+            <div class="card-content blue">
+              <span class="text-darken-4 flow-text white-text">
+                Food Facts Voice Assistant
+                <i class="material-icons right"> </i>
+              </span>
+              <br />
+              <span class="white-text flow-text">
+                This term in my Voice Assistants class we learned how to work
+                with voice assistant applictions like Alexa, Siri, or Google
+                Home. For my project I made a voice assistant that can be
+                helpful with food facts. If you wish to interact with it, click
+                the plus sign.
+              </span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"
+                >Card Title<i class="material-icons right">close</i></span
+              >
+              <p>
+                You can ask for nutritional facts, ask for recipies with
+                ingredients you have at home, hear a joke about food, or just
+                hear a random food fact.
+              </p>
+              <iframe
+                loading="lazy"
+                allow="microphone;"
+                width="350"
+                height="430"
+                src="https://console.dialogflow.com/api-client/demo/embedded/fc13402b-f97e-4cec-9705-658213894671"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Food Facts -->
+
+      <!--  Android App -->
+      <div class="row section">
+        <div class="col s12 m7 l12 offset-m3">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="images/android stock.png"
+                alt="Stock photo of android studio"
+              />
+            </div>
+            <div class="card-content blue">
+              <span class="activator text-darken-4 white-text flow-text">
+                Android App
+                <i class="material-icons right"></i>
+              </span>
+              <br />
+              <span class="white-text flow-text">
+                In Advance Programming in Java with David Withlock class, we
+                continuously developed an appointment book. It started off by
+                just entering one appointment in the command line for one single
+                user, then evolved to being a RESTful application with
+                appointments coming from the command line, or through a browser
+                for many different user's and their own appointment books. We
+                concluded the class by developing the appointment book as an
+                Android app. This was a fun class, really enjoyed the challenges
+                David would through at us. By implementing it in a Test Driven
+                Development style it allowed us to make sure we were not
+                breaking existing functionality when adding new ones.
+              </span>
+            </div>
+            <div class="card-action flow-text">
+              <a href="https://github.com/VictorPDX/Advance-Java">
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Android App -->
+    </main>
+    <div id="footer"></div>
+  </body>
+</html>

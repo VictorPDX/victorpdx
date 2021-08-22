@@ -5,13 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact Victor</title>
-
     <script src="common/_head biolerplate.js"></script>
   </head>
   <body>
     <div class="header">
+      <!-- <script src="common/_navbar.js"></script> -->
       <!-- Navbar -->
-      <script src="common/_navbar.js"></script>
+      <!-- https://materializecss.com/navbar.html -->
+      <nav class="purple darken-3 navbar-fixed">
+        <div class="nav-wrapper">
+          <!-- Mobile Collapse Button -->
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i></a
+          >
+
+          <ul class="left hide-on-med-and-down navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="work.html">My Work</a></li>
+            <li><a href="school.html">My Projects</a></li>
+            <li class="active"><a href="contact.html">Conact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Side-Nav -->
+      <!-- mobile collapse button target -->
+      <ul class="sidenav navbar" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="work.html">My Work</a></li>
+        <li><a href="school.html">My Projects</a></li>
+        <li class="active"><a href="contact.html">Conact Me</a></li>
+      </ul>
+      <!-- End Side-Nav -->
 
       <header>
         <h1>Contact Me</h1>
