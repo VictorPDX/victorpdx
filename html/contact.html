@@ -5,16 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact Victor</title>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- Local assets -->
+    <script defer src="../js/main.js"></script>
+    <link rel="stylesheet" href="../stylesheets/index.css" />
+
+    <!-- materialize -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../stylesheets/materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <script
+      type="text/javascript"
+      src="../js/materialize/js/materialize.min.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body>
-    <header>
-      <h1>Contact Me</h1>
-    </header>
+    <div class="header">
+      <!-- Navbar -->
+      <!-- https://materializecss.com/navbar.html -->
+      <nav class="purple darken-3 navbar-fixed">
+        <div class="nav-wrapper">
+          <!-- Mobile Collapse Button -->
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i></a
+          >
 
+          <ul class="left hide-on-med-and-down navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="work.html">My Work</a></li>
+            <li><a href="school.html">My Projects</a></li>
+            <li class="active"><a href="contact.html">Conact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Side-Nav -->
+      <!-- mobile collapse button target -->
+      <ul class="sidenav navbar" id="mobile-demo">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="work.html">My Work</a></li>
+        <li><a href="school.html">My Projects</a></li>
+        <li class="active"><a href="contact.html">Conact Me</a></li>
+      </ul>
+      <!-- End Side-Nav -->
+
+      <header>
+        <h1>Contact Me</h1>
+      </header>
+    </div>
     <h5>
       When contacting me, please let me know who you are and how I can be of
       service.
     </h5>
     <br />
+
+    <form action="#" class="col s12 form">
+      <!-- NAME -->
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="first_name" type="text" class="validate" />
+          <label for="first_name">First Name</label>
+          <span class="helper-text" data-error="invalid" data-success=""></span>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="last_name" type="text" class="validate" />
+          <label for="last_name">Last Name</label>
+          <span class="helper-text" data-error="invalid" data-success=""></span>
+        </div>
+      </div>
+
+      <!-- Contact info -->
+      <div class="row">
+        <div class="input-field col s4">
+          <i class="material-icons prefix">business</i>
+          <input id="company" type="text" class="validate" />
+          <label for="company">Company</label>
+          <span class="helper-text" data-success=""></span>
+        </div>
+        <div class="input-field col s4">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate" />
+          <label for="icon_telephone">Telephone</label>
+          <span
+            class="helper-text"
+            data-error="unrecognized phone number"
+            data-success=""
+          ></span>
+        </div>
+        <div class="input-field col s4">
+          <i class="material-icons prefix">email</i>
+          <input id="email" type="email" class="validate" />
+          <label for="email">Email</label>
+          <span
+            class="helper-text"
+            data-error="invalid email address"
+            data-success=":-)"
+          ></span>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label class="active" for="textarea1">Description</label>
+        </div>
+      </div>
+
+      <div class="row center-align">
+        <button class="btn" type="submit" name="action">
+          <i class="left material-icons">send</i>
+          Submit
+        </button>
+
+        <button class="btn" type="reset" value="Reset">
+          <i class="material-icons right">clear</i> Reset
+        </button>
+      </div>
+    </form>
   </body>
 </html>

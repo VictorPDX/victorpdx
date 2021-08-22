@@ -5,12 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Victor's Personal blog</title>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- Local assets -->
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="stylesheets/index.css" />
+
+    <!-- materialize -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="stylesheets/materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <script
+      type="text/javascript"
+      src="js/materialize/js/materialize.min.js"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Navbar -->
+    <!-- https://materializecss.com/navbar.html -->
+    <nav class="purple darken-3 navbar-fixed">
+      <div class="nav-wrapper">
+        <!-- Mobile Collapse Button -->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons">menu</i></a
+        >
+
+        <ul class="left hide-on-med-and-down navbar">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="html/about.html">About Me</a></li>
+          <li><a href="html/work.html">My Work</a></li>
+          <li><a href="html/school.html">My Projects</a></li>
+          <li><a href="html/contact.html">Conact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Side-Nav -->
+    <!-- mobile collapse button target -->
+    <ul class="sidenav navbar" id="mobile-demo">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="html/about.html">About Me</a></li>
+      <li><a href="html/work.html">My Work</a></li>
+      <li><a href="html/school.html">My Projects</a></li>
+      <li><a href="html/contact.html">Conact Me</a></li>
+    </ul>
+    <!-- End Side-Nav -->
+
     <header>
       <h3>This is me</h3>
     </header>
-
     <div class="main">
       <img
         src="images/Victor.jpg"
@@ -19,7 +73,7 @@
         alt="Profile Picture"
       />
 
-      <p id="statement" class="center-align">
+      <p class="center-align">
         Hello World!! I am Victor, and this is my personal website. This website
         is all about me. It showcases the work I have done in school, my work
         experience, and how to contact me.
