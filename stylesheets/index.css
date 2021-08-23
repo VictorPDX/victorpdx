@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 100px;
+  min-height: 100%;
+}
+
+img {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10%;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+#footer,
+#workfooter {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+
+  text-align: center;
+}
+
+.resumeDeails {
+  font-size: 24px;
+}
+
+.labelinput {
+  font-size: 24px;
+}

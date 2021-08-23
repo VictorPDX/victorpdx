@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>Victor's Work</title>
-    <script src="common/_head biolerplate.js"></script>
-    <link rel="stylesheet" href="stylesheets/work.css" />
+    <script src="common/headBoilerplate.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -55,7 +54,7 @@
         <div>
           <div>Gresham, OR</div>
           <div>
-            <a href="VictorHeredia084@gmail.com">
+            <a class="resumeDeails" href="VictorHeredia084@gmail.com">
               VictorHeredia084@gmail.com
             </a>
           </div>
@@ -66,14 +65,18 @@
         <h3>Education</h3>
         <div>
           <h4>Master of Science – Computer Science</h4>
-          <a href="https://www.pdx.edu/"> Portland State University </a>
+          <a class="resumeDeails" href="https://www.pdx.edu/">
+            Portland State University
+          </a>
           <br />
           2020 - 2021
         </div>
 
         <div>
           <h4>Bachelor of Science – Computer Science</h4>
-          <a href="https://www.pdx.edu/"> Portland State University </a>
+          <a class="resumeDeails" href="https://www.pdx.edu/">
+            Portland State University
+          </a>
           <br />
           2018 - 2020
         </div>
@@ -110,41 +113,51 @@
 
     <!-- Preview Resume -->
     <center>
-      <embed
+      <!-- <embed
         class="right-align container"
         src="/assets/Heredia, Victor - Resume.pdf"
         width="800"
         height="400"
         type="application/pdf"
-      />
+      /> -->
+      <!-- https://stackoverflow.com/questions/291813/recommended-way-to-embed-pdf-in-html?rq=1 -->
+      <iframe
+        class="previewresume"
+        src="http://docs.google.com/gview?url=http://web.cecs.pdx.edu/~victor32/VictorPDX/assets/Heredia,%20Victor%20-%20Resume.pdf&amp;embedded=true"
+        width="800"
+        height="400"
+        frameborder="2"
+      ></iframe>
     </center>
 
     <!-- Footer with download and LinkedIn -->
-    <nav class="purple darken-3 navbar-fixed">
-      <div class="nav-wrapper">
-        <ul class="left hide-on-med-and-down navbar">
-          <li>
-            <a
-              class="Navbar-btn Navbar-btn--main"
-              href="/assets/Heredia, Victor - Resume.pdf"
-            >
-              Download
-              <span>(pdf)</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/heredia-victor/"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <a hred="https://materializecss.com/"> Materilize CSS </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div id="workfooter">
+      <nav class="purple darken-3 navbar-fixed footer">
+        <div class="nav-wrapper">
+          <ul class="left hide-on-med-and-down navbar">
+            <li>
+              <a
+                class="Navbar-btn Navbar-btn--main"
+                href="/assets/Heredia, Victor - Resume.pdf"
+              >
+                Download
+                <span>(pdf)</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/heredia-victor/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a hred="https://materializecss.com/"> Materilize CSS </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </body>
 </html>
