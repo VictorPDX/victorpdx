@@ -17,6 +17,14 @@ img {
   border-radius: 10%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding-left: 20px;
+}
+
 .main {
   margin: 0 auto;
 }
@@ -37,5 +45,24 @@ img {
 }
 
 .labelinput {
+  font-size: 24px;
+}
+
+form {
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 5%;
+  padding: 20px 20px;
+  margin: auto;
+  font-weight: bold;
+  /* font-size: 20px; */
+  /* color: black; */
+}
+
+#labelinput {
+  color: black;
+}
+
+#formBtns {
   font-size: 24px;
 }
